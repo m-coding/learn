@@ -1,0 +1,33 @@
+body {
+   background-color: #faf496;
+   font-family: Calibri, Arial, Helvetica, sans-serif;
+   color: #000;
+}
+
+h1 {
+   text-align: center;
+   font-size: 42px;
+   margin: 20px;
+   padding: 0;
+}
+
+#cat {
+   width: 791px;
+   height: 527px;
+}
+
+#catContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#catCounter {
+   background-color: #ffdd99;
+   height: 91px;
+   width: 791px;
+   margin: 25px auto 0 auto;
+   padding: 40px 0 0 0;
+   text-align: center;
+   font-size: 36px;
+}
