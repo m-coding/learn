@@ -1,68 +1,87 @@
-/* EVENT LISTER: JavaScript */
-// var elem = document.getElementById('my-elem');
-// elem.addEventListener('click', function(){
-//   //the element has been clicked... do stuff here
-// }, false);
+/* VARIABLES
+----------------------------------*/
 
-/* EVENT LISTENER: jQuery */
-// $('#my-elem').click(function(e) {
-//   //the element has been clicked... do stuff here
-// });
+var catNames = ['Carmilla', 'Pickles', 'Miss Kitty', 'Gizmo', 'Simba'];
+var catObj = {};
+var catObjArray = [];
+var $catList = $('#catList');
+var $catImg = $('#cat1');
+var currentObj = {};
 
-var count = 0;
-var catNames = ['Pickles','Carmilla'];
-var $catContainer = $('#catContainer');
+/* EVENT LISTENERS
+----------------------------------*/
+
+$(document).ready(function() {
+
+    /**
+     * Cat image click counter
+     */
+    $catImg.click(function(e) {
+        currentObj.clicks++;
+        $catImg.parent().find('.circleCount').text(currentObj.clicks);
+    });
+
+    /**
+     * Cat list click event
+     */
+    $('.listlink').click(function(e) {
+        $catImg.parent().find('.circleCount').text('');
+        for(var c = 0; c < catObjArray.length; c++) {
+            var cat = catObjArray[c];
+            if(cat.name === this.innerHTML) {
+                cat.displayName();
+                cat.displayImage();
+                currentObj = cat;
+                break; // jump out of the loop
+            }
+        }
+        return false;
+    }); // .listlink
+}); // document.ready
+
+/* CAT CLASS
+----------------------------------*/
+
+/**
+ * Cats
+ * @class  Cat
+ * @param {string} name - The cat's name
+ */
+var Cat = function(index, name) {
+    this.id = '#cat1';
+    this.name = name;
+    this.image = 'http://lorempixel.com/400/320/cats/' + (index + 1);
+    this.cat = $(this.id);
+    this.clicks = 0;
+};
+
+Cat.prototype = {
+    constructor: Cat,
+
+    displayName: function () {
+        this.cat.parent().find('figcaption').text(this.name);
+    },
+
+    displayImage: function () {
+        this.cat.attr('src', this.image);
+    }
+};
+
+/* INSTANTIATE OBJECTS
+----------------------------------*/
 
 /**
  * Display all the cat names
  */
 for( var i = 0; i < catNames.length; i++) {
-   displayName(i, catNames[i]);
-}
+    $catList.append('<li class="list">' +
+                    '<a class="listlink" href="#' + catNames[i] + '">' +
+                    catNames[i] +
+                    '</a></li>');
+    catObj = new Cat(i, catNames[i]);
+    catObjArray.push(catObj);
 
-/**
- * Cat Click Counter
- */
-$('.cats').click(function(e) {
-    var $catImg = $('#catImg');
-    count++;
-
-    displayCount(this.id, count.toString());
-});
-
-/**
- * Display a cat's name
- */
-function displayName(index, name) {
-   var id = index + 1;
-   var $cat = $('#cat' + id);
-   var catX = $cat.width();
-   var catY = $cat.height();
-
-   var $name = $('<figcaption id="' + name + '">' + name + "</figcaption>");
-   $name.css('position', 'absolute');
-   $name.css('top', catY - 50);
-   $name.css('left', catX - 100);
-   $cat.parent().append($name);
-
-   // console.log('displayName(' + index + ', ' + name + ')');
-}
-
-/**
- * Display count
- */
-function displayCount(id, count) {
-   var $cat = $('#' + id);
-   // console.log('displayCount() id: #' + id + ' count: ' + count);
-
-   if($cat.parent().find('.circleCount').length) {
-      $cat.parent().find('.circleCount').text(count);
-      console.log('text()');
-   } else {
-      var docfrag = document.createDocumentFragment();
-      var $div = $('<div class="circleCount">' + count + '</div>');
-      $div.appendTo(docfrag);
-      $cat.parent().prepend(docfrag);
-      console.log('prepend()');
-   }
+    if( i === 0) {
+        catObj.displayName();
+    }
 }

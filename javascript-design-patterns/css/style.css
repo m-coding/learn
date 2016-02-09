@@ -18,28 +18,44 @@ figure {
 }
 
 figcaption {
+   position: absolute;
+   top: 270px;
+   left: 300px;
    background-color: rgba(204, 204, 204, 0.75);
    padding: 10px;
    text-transform: uppercase;
    font-weight: bold;
+   border: 2px solid #333;
 }
 
 #cat1 {
    width: 400px;
-   height: 265px;
-}
-
-#cat2 {
-   width: 400px;
    height: 320px;
-   padding-left: 20px;
 }
 
 #catContainer {
    position: relative;
+   display: -ms-flex;
+   display: -webkit-flex;
    display: flex;
    justify-content: center;
-   align-items: center;
+   align-items: top;
+   padding: 50px;
+}
+
+#catContainer figure {
+   width: 400px;
+   height: 320px;
+   border: 5px solid #000;
+}
+
+#catContainer ul {
+   position: relative;
+   width: 200px;
+   background-color: #ededed;
+   border: 1px solid #ccc;
+   padding: 0 0 0 10px;
+   margin: 0 0 0 20px;
 }
 
 #catCounter {
@@ -66,3 +82,18 @@ figcaption {
    -moz-border-radius: 50%;
    border-radius: 50%;
 }
+
+.list {
+   list-style: none;
+}
+
+.list a {
+   text-decoration: none;
+   color: #0095dd;
+}
+
+.list a:hover {
+   text-decoration: underline;
+   color: #0095dd;
+}
+
