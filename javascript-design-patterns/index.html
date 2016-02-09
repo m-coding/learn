@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Cat Clicker v5.0.0</title>
+   <title>Cat Clicker v6.0.0</title>
    <link rel="stylesheet" href="css/style.css"></style>
 </head>
 <body>
-   <h1>Cat Clicker v5.0.0</h1>
+   <h1>Cat Clicker v6.0.0</h1>
 
    <div id="catContainer">
       <figure>
@@ -16,6 +16,17 @@
       </figure>
 
       <ul id="catList"></ul>
+   </div>
+
+   <div id="adminContainer">
+      <button name="adminMode" id="admin">Admin</button>
+      <div id="adminArea">
+         <p><input type="text" value="name" id="name"></p>
+         <p><input type="text" value="url" id="url"></p>
+         <p><input type="text" value="clicks" id="clicks"></p>
+         <button name="adminCancel" id="cancel">Cancel</button>
+         <button name="adminSave" id="save">Save</button>
+      </div>
    </div>
 
    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
