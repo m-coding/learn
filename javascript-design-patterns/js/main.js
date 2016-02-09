@@ -1,3 +1,19 @@
+var viewModel = function() {
+    this.name = ko.observable('Carmilla');
+    this.image = ko.observable('http://lorempixel.com/400/320/cats/1');
+    this.clicks = ko.observable(0);
+
+    this.incrementCounter = function() {
+        this.clicks(this.clicks() + 1);
+    };
+
+};
+
+ko.applyBindings(new viewModel());
+
+/*
+*
+*
 $(function() {
 
     var model = {
@@ -9,6 +25,7 @@ $(function() {
             this.name = name;
             this.image = 'http://lorempixel.com/400/320/cats/' + (index + 1);
             this.clicks = 0;
+            this.level = 'Newborn';
         },
 
         addCat: function(index,name) {
@@ -28,7 +45,7 @@ $(function() {
     };
 
 
-    var octopus = {
+    var viewModel = {
 
         getClickedCat: function(name) {
             var catsArray = model.catObjArray;
@@ -43,6 +60,13 @@ $(function() {
                     return cat;
                 } // if
             } // for
+        },
+
+        getCatLevel: function(catObj) {
+            var clk = catObj.clicks;
+            if(clk >= 10) catObj.level = 'Infant';
+            if(clk >= 50) catObj.level = 'Teen';
+            return catObj.level;
         },
 
         getCurrentCat: function () {
@@ -115,6 +139,7 @@ $(function() {
             // Cat image click event
             this.$catImg.click(function(e) {
                 var cat = octopus.getCurrentCat();
+                var lvl = octopus.getCatLevel(cat);
                 cat.clicks++;
                 $(this).parent().find('.circleCount').text(cat.clicks);
             }); // #cat1
@@ -194,3 +219,6 @@ $(function() {
 
     octopus.init();
 }());
+*
+*
+*/

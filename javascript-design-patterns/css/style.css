@@ -15,6 +15,9 @@ figure {
    position: relative;
    margin: 0;
    padding: 0;
+   width: 400px;
+   height: 320px;
+   border: 5px solid #000;
 }
 
 figcaption {
@@ -28,7 +31,7 @@ figcaption {
    border: 2px solid #333;
 }
 
-#cat1 {
+img { /* was #cat1 */
    width: 400px;
    height: 320px;
 }
@@ -43,70 +46,17 @@ figcaption {
    padding: 50px;
 }
 
-#catContainer figure {
-   width: 400px;
-   height: 320px;
-   border: 5px solid #000;
-}
-
-#catContainer ul {
-   position: relative;
-   width: 200px;
-   background-color: #ededed;
-   border: 1px solid #ccc;
-   padding: 0 0 0 10px;
-   margin: 0 0 0 20px;
-}
-
-#catCounter {
-   background-color: #ffdd99;
-   height: 91px;
-   width: 820px;
-   margin: 25px auto 0 auto;
-   padding: 40px 0 0 0;
-   text-align: center;
-   font-size: 36px;
-}
-
-.circleCount {
-   position: absolute;
+#catContainer div { /* was .circleCount */
    right: 0;
+   width: 50px;
+   background-color: rgba(0, 255, 252, 0.6);
+   position: absolute;
    text-align: center;
    margin: 10px;
-   width: 50px;
    height: 50px;
    line-height: 50px;
    border: 2px solid #333;
-   background-color: rgba(255, 255, 255, 0.6);
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
    border-radius: 50%;
-}
-
-.list {
-   list-style: none;
-}
-
-.list a {
-   text-decoration: none;
-   color: #0095dd;
-}
-
-.list a:hover {
-   text-decoration: underline;
-   color: #0095dd;
-}
-
-#adminContainer {
-   margin: 0 auto;
-   width: 642px;
-}
-
-#adminArea {
-   margin-top: 20px;
-   display: none;
-}
-
-#adminArea input {
-   width: 400px;
 }
