@@ -11,12 +11,32 @@ h1 {
    padding: 0;
 }
 
-#cat {
-   width: 791px;
-   height: 527px;
+figure {
+   position: relative;
+   margin: 0;
+   padding: 0;
+}
+
+figcaption {
+   background-color: rgba(204, 204, 204, 0.75);
+   padding: 10px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+#cat1 {
+   width: 400px;
+   height: 265px;
+}
+
+#cat2 {
+   width: 400px;
+   height: 320px;
+   padding-left: 20px;
 }
 
 #catContainer {
+   position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -25,9 +45,24 @@ h1 {
 #catCounter {
    background-color: #ffdd99;
    height: 91px;
-   width: 791px;
+   width: 820px;
    margin: 25px auto 0 auto;
    padding: 40px 0 0 0;
    text-align: center;
    font-size: 36px;
+}
+
+.circleCount {
+   position: absolute;
+   right: 0;
+   text-align: center;
+   margin: 10px;
+   width: 50px;
+   height: 50px;
+   line-height: 50px;
+   border: 2px solid #333;
+   background-color: rgba(255, 255, 255, 0.6);
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
 }
