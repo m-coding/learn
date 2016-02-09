@@ -27,6 +27,9 @@ Later you are asked to use [KnockoutJS](http://knockoutjs.com/), which uses the 
 * Visuals: **1)** a list of cats by name **2)** an area to display the selected cat **3)** name, picture, clicks
 * Interaction: **1)** when a cat name is clicked in the list, the cat display area should update to show the data for the selected cat **2)** the number of clicks should be unique to each cat
 
+### v5 Cat Clicker Premium
+* Improve previous version by referring to the proposed solution
+
 # What I learned
 
 TBD

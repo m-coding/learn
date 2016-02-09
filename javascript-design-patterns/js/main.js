@@ -1,8 +1,5 @@
 $(function() {
 
-    var $catList = $('#catList');
-    var $catImg = $('#cat1');
-
     var model = {
         catNames: ['Carmilla', 'Pickles', 'Miss Kitty', 'Gizmo', 'Simba'],
 
@@ -14,16 +11,8 @@ $(function() {
             this.clicks = 0;
         },
 
-        getCatNames: function() {
-            return model.catNames;
-        },
-
         addCat: function(index,name) {
             return new model.Cat(index,name);
-        },
-
-        getCats: function() {
-            return model.catObjArray;
         },
 
         createAllCats: function() {
@@ -37,11 +26,11 @@ $(function() {
         }
     };
 
-    // TODO: remove functions when you can ref the data directly with model.xyz
+
     var octopus = {
 
         getClickedCat: function(name) {
-            var catsArray = model.getCats();
+            var catsArray = model.catObjArray;
             var catsLength = catsArray.length;
             var cat = {};
             var c = 0;
@@ -57,49 +46,54 @@ $(function() {
 
         init: function() {
             model.init();
-            var names = model.getCatNames();
-            var cats = model.getCats();
-            view.init(names, cats);
+            view.init(model.catNames, model.catObjArray);
         }
     };
 
-    // TODO: use this.elem to reference the id for the html
+
     var view = {
         init: function(catNames, catObjArray) {
-            view.renderList(catNames, catObjArray);
+            // Save pointers to our DOM elements
+            this.$catList = $('#catList');
+            this.$catImg = $('#cat1');
 
             // Set the first cat object
-            var catObj = catObjArray[0];
+            catObj = catObjArray[0];
+            view.render(catObj);
+
+            // Display list of cat names
+            view.renderList(catNames, catObjArray);
 
             // List of cat names click event
             $('.listlink').click(function(e) {
-                $catImg.parent().find('.circleCount').text('');
+                view.$catImg.parent().find('.circleCount').text('');
                 catObj = octopus.getClickedCat(this.innerHTML);
                 view.render(catObj);
                 e.preventDefault();
             }); // .listlink
 
             // Cat image click event
-            $catImg.click(function(e) {
+            this.$catImg.click(function(e) {
                 catObj.clicks++;
-                $catImg.parent().find('.circleCount').text(catObj.clicks);
+                $(this).parent().find('.circleCount').text(catObj.clicks);
             }); // #cat1
         },
 
         render: function(catObj){
             // Clicks
-            $catImg.parent().find('.circleCount').text(catObj.clicks);
+            this.$catImg.parent().find('.circleCount').text(catObj.clicks);
 
             // Name
-            $catImg.parent().find('figcaption').text(catObj.name);
+            this.$catImg.parent().find('figcaption').text(catObj.name);
 
             // Image
-            $catImg.attr('src', catObj.image);
+            this.$catImg.attr('src', catObj.image);
         },
-        // TODO: split views
+
+        // TODO: split views? nah
         renderList: function(catNames){
             for( var i = 0; i < catNames.length; i++) {
-                $catList.append('<li class="list">' +
+                this.$catList.append('<li class="list">' +
                                 '<a class="listlink" href="#' + catNames[i] + '">' +
                                 catNames[i] +
                                 '</a></li>');
