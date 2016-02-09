@@ -21,6 +21,12 @@ Later you are asked to use [KnockoutJS](http://knockoutjs.com/), which uses the 
 * Visuals: **1)** display five cats listed by name **2)** an area to display the selected cat **3)** name, picture, clicks
 * Interaction: the number of clicks should increment when the cat picture is clicked
 
+## Lesson 2: Refactoring with Separation of Concerns
+### v4 Cat Clicker Premium
+* Seperate the **Model** from the **View**, only the **Octopus** can talk to both
+* Visuals: **1)** a list of cats by name **2)** an area to display the selected cat **3)** name, picture, clicks
+* Interaction: **1)** when a cat name is clicked in the list, the cat display area should update to show the data for the selected cat **2)** the number of clicks should be unique to each cat
+
 # What I learned
 
 TBD

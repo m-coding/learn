@@ -1,87 +1,111 @@
-/* VARIABLES
-----------------------------------*/
+$(function() {
 
-var catNames = ['Carmilla', 'Pickles', 'Miss Kitty', 'Gizmo', 'Simba'];
-var catObj = {};
-var catObjArray = [];
-var $catList = $('#catList');
-var $catImg = $('#cat1');
-var currentObj = {};
+    var $catList = $('#catList');
+    var $catImg = $('#cat1');
 
-/* EVENT LISTENERS
-----------------------------------*/
+    var model = {
+        catNames: ['Carmilla', 'Pickles', 'Miss Kitty', 'Gizmo', 'Simba'],
 
-$(document).ready(function() {
+        catObjArray: [],
 
-    /**
-     * Cat image click counter
-     */
-    $catImg.click(function(e) {
-        currentObj.clicks++;
-        $catImg.parent().find('.circleCount').text(currentObj.clicks);
-    });
+        Cat: function(index, name) {
+            this.name = name;
+            this.image = 'http://lorempixel.com/400/320/cats/' + (index + 1);
+            this.clicks = 0;
+        },
 
-    /**
-     * Cat list click event
-     */
-    $('.listlink').click(function(e) {
-        $catImg.parent().find('.circleCount').text('');
-        for(var c = 0; c < catObjArray.length; c++) {
-            var cat = catObjArray[c];
-            if(cat.name === this.innerHTML) {
-                cat.displayName();
-                cat.displayImage();
-                currentObj = cat;
-                break; // jump out of the loop
-            }
+        getCatNames: function() {
+            return model.catNames;
+        },
+
+        addCat: function(index,name) {
+            return new model.Cat(index,name);
+        },
+
+        getCats: function() {
+            return model.catObjArray;
+        },
+
+        createAllCats: function() {
+            for( var i = 0; i < model.catNames.length; i++) {
+                model.catObjArray.push(model.addCat(i, model.catNames[i]));
+            } // for
+        },
+
+        init: function() {
+            model.createAllCats();
         }
-        return false;
-    }); // .listlink
-}); // document.ready
+    };
 
-/* CAT CLASS
-----------------------------------*/
+    // TODO: remove functions when you can ref the data directly with model.xyz
+    var octopus = {
 
-/**
- * Cats
- * @class  Cat
- * @param {string} name - The cat's name
- */
-var Cat = function(index, name) {
-    this.id = '#cat1';
-    this.name = name;
-    this.image = 'http://lorempixel.com/400/320/cats/' + (index + 1);
-    this.cat = $(this.id);
-    this.clicks = 0;
-};
+        getClickedCat: function(name) {
+            var catsArray = model.getCats();
+            var catsLength = catsArray.length;
+            var cat = {};
+            var c = 0;
 
-Cat.prototype = {
-    constructor: Cat,
+            for(c; c < catsLength; c++) {
+                cat = catsArray[c];
 
-    displayName: function () {
-        this.cat.parent().find('figcaption').text(this.name);
-    },
+                if(cat.name === name) {
+                    return cat;
+                } // if
+            } // for
+        },
 
-    displayImage: function () {
-        this.cat.attr('src', this.image);
-    }
-};
+        init: function() {
+            model.init();
+            var names = model.getCatNames();
+            var cats = model.getCats();
+            view.init(names, cats);
+        }
+    };
 
-/* INSTANTIATE OBJECTS
-----------------------------------*/
+    // TODO: use this.elem to reference the id for the html
+    var view = {
+        init: function(catNames, catObjArray) {
+            view.renderList(catNames, catObjArray);
 
-/**
- * Display all the cat names
- */
-for( var i = 0; i < catNames.length; i++) {
-    $catList.append('<li class="list">' +
-                    '<a class="listlink" href="#' + catNames[i] + '">' +
-                    catNames[i] +
-                    '</a></li>');
-    catObj = new Cat(i, catNames[i]);
-    catObjArray.push(catObj);
+            // Set the first cat object
+            var catObj = catObjArray[0];
 
-    if( i === 0) {
-        catObj.displayName();
-    }
-}
+            // List of cat names click event
+            $('.listlink').click(function(e) {
+                $catImg.parent().find('.circleCount').text('');
+                catObj = octopus.getClickedCat(this.innerHTML);
+                view.render(catObj);
+                e.preventDefault();
+            }); // .listlink
+
+            // Cat image click event
+            $catImg.click(function(e) {
+                catObj.clicks++;
+                $catImg.parent().find('.circleCount').text(catObj.clicks);
+            }); // #cat1
+        },
+
+        render: function(catObj){
+            // Clicks
+            $catImg.parent().find('.circleCount').text(catObj.clicks);
+
+            // Name
+            $catImg.parent().find('figcaption').text(catObj.name);
+
+            // Image
+            $catImg.attr('src', catObj.image);
+        },
+        // TODO: split views
+        renderList: function(catNames){
+            for( var i = 0; i < catNames.length; i++) {
+                $catList.append('<li class="list">' +
+                                '<a class="listlink" href="#' + catNames[i] + '">' +
+                                catNames[i] +
+                                '</a></li>');
+            } // for
+        } // renderList
+    };
+
+    octopus.init();
+}());
