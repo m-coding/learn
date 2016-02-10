@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Cat Clicker v10.0.0</title>
+   <title>Cat Clicker v11.0.0</title>
    <link rel="stylesheet" href="css/style.css"></style>
 </head>
 <body>
-   <h1>Cat Clicker v10.0.0</h1>
+   <h1>Cat Clicker v11.0.0</h1>
 
-   <div id="catContainer">
+   <div id="catContainer" data-bind="with: currentCat">
       <figure>
-         <h2 data-bind="text: currentCat().getLevel"></h2>
-         <div data-bind="text: currentCat().clicks"></div>
-         <img data-bind="click: incrementCounter, attr: {src: currentCat().image}" src="" alt="cute cat">
-         <figcaption data-bind="text: currentCat().name"></figcaption>
+         <h2 data-bind="text: getLevel"></h2>
+         <div data-bind="text: clicks"></div>
+         <img data-bind="click: $parent.incrementCounter, attr: {src: image}" src="" alt="cute cat">
+         <figcaption data-bind="text: name"></figcaption>
       </figure>
 
-      <ul data-bind="foreach: currentCat().nicknames">
+      <ul data-bind="foreach: nicknames">
          <li data-bind="text: $data"></li>
       </ul>
    </div>

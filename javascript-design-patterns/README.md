@@ -48,6 +48,9 @@ Later you are asked to use [KnockoutJS](http://knockoutjs.com/), which uses the 
 ### v10 Cat Clicker Knockout
 * :small_red_triangle: Separate out the cat **Model** from the **ViewModel**.
 
+### v11 Cat Clicker Knockout
+* :small_red_triangle: Implement **KnockoutJS** [with](http://knockoutjs.com/documentation/with-binding.html) binding.
+
 # What I learned
 
 TBD

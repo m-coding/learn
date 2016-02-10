@@ -17,8 +17,14 @@ var viewModel = function() {
     this.currentCat = ko.observable( new Cat() );
 
     this.incrementCounter = function() {
-        this.currentCat().clicks(this.currentCat().clicks() + 1);
+        // 'this' represents the binding context set in index.html
+        this.clicks(this.clicks() + 1);
     };
+
+    // Alternate way:
+    // var self = this;
+    // self.currentCat().clicks(self.currentCat().clicks() + 1);
+
 };
 
 ko.applyBindings(new viewModel());
