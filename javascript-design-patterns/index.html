@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Cat Clicker v11.0.0</title>
+   <title>Cat Clicker v12.0.0</title>
    <link rel="stylesheet" href="css/style.css"></style>
 </head>
 <body>
-   <h1>Cat Clicker v11.0.0</h1>
-
+   <h1>Cat Clicker v12.0.0</h1>
    <div id="catContainer" data-bind="with: currentCat">
       <figure>
          <h2 data-bind="text: getLevel"></h2>
+         <ul data-bind="foreach: nicknames">
+            <li data-bind="text: $data"></li>
+         </ul>
          <div data-bind="text: clicks"></div>
          <img data-bind="click: $parent.incrementCounter, attr: {src: image}" src="" alt="cute cat">
          <figcaption data-bind="text: name"></figcaption>
       </figure>
 
-      <ul data-bind="foreach: nicknames">
-         <li data-bind="text: $data"></li>
-      </ul>
+      <ol data-bind="foreach: $parent.catList">
+         <li><a href="#" data-bind="click: $root.changeCat, text: name"></a></li>
+      </ol>
    </div>
 
    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

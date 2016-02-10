@@ -51,6 +51,9 @@ Later you are asked to use [KnockoutJS](http://knockoutjs.com/), which uses the 
 ### v11 Cat Clicker Knockout
 * :small_red_triangle: Implement **KnockoutJS** [with](http://knockoutjs.com/documentation/with-binding.html) binding.
 
+### v12 Cat Clicker Knockout
+* :small_red_triangle: Pass `data` to the Cat constructor function so you can create multiple cats.
+
 # What I learned
 
 TBD

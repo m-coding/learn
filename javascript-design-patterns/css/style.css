@@ -29,6 +29,34 @@ h2 {
    border-radius: 50%;
 }
 
+/* nicknames */
+ul {
+   list-style: none;
+   position: absolute;
+   left: 10px;
+   bottom: 8px;
+   background-color: rgba(255, 204, 204, 0.6);
+   padding: 10px;
+   margin: 0;
+   text-transform: uppercase;
+   font-weight: bold;
+   border: 2px solid #333;
+}
+
+/* cat list */
+ol {
+   position: relative;
+   width: 200px;
+   background-color: #ededed;
+   border: 1px solid #ccc;
+   padding: 0 0 0 10px;
+   margin: 0 0 0 20px;
+}
+
+ol li {
+   margin-left: 20px;
+}
+
 figure {
    position: relative;
    margin: 0;
@@ -80,15 +108,4 @@ img {
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
    border-radius: 50%;
-}
-
-/* nicknames */
-#catContainer ul {
-   list-style: none;
-   position: relative;
-   width: 200px;
-   background-color: #ededed;
-   border: 1px solid #ccc;
-   padding: 0 0 0 10px;
-   margin: 0 0 0 20px;
 }
