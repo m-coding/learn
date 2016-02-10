@@ -45,6 +45,9 @@ Later you are asked to use [KnockoutJS](http://knockoutjs.com/), which uses the 
 ### v9 Cat Clicker Knockout
 * :small_red_triangle: Implement an array of nicknames for each cat using **KnockoutJS** [control flow](http://knockoutjs.com/documentation/foreach-binding.html) to display them all.
 
+### v10 Cat Clicker Knockout
+* :small_red_triangle: Separate out the cat **Model** from the **ViewModel**.
+
 # What I learned
 
 TBD
