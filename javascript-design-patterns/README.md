@@ -39,6 +39,9 @@ Later you are asked to use [KnockoutJS](http://knockoutjs.com/), which uses the 
 ### v7 Cat Clicker Knockout
 * :small_red_triangle: Add **KnockoutJS** [observables](http://knockoutjs.com/documentation/observables.html) and [bindings](http://knockoutjs.com/documentation/text-binding.html) to display the cat data.
 
+### v8 Cat Clicker Knockout
+* :small_red_triangle: Add Levels to Cat Clicker: Newborn, Infant, Teen using **KnockoutJS** [computed observables](http://knockoutjs.com/documentation/computedObservables.html).
+
 # What I learned
 
 TBD

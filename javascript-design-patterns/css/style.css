@@ -4,11 +4,29 @@ body {
    color: #000;
 }
 
+/* version */
 h1 {
    text-align: center;
    font-size: 42px;
    margin: 20px;
    padding: 0;
+}
+
+/* level */
+h2 {
+   left: 0;
+   width: 120px;
+   background-color: rgba(255, 252, 25, 0.6);
+   position: absolute;
+   text-align: center;
+   margin: 10px;
+   padding: 0;
+   height: 50px;
+   line-height: 50px;
+   border: 2px solid #333;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
 }
 
 figure {
@@ -20,6 +38,7 @@ figure {
    border: 5px solid #000;
 }
 
+/* name */
 figcaption {
    position: absolute;
    top: 270px;
@@ -31,7 +50,8 @@ figcaption {
    border: 2px solid #333;
 }
 
-img { /* was #cat1 */
+/* cat */
+img {
    width: 400px;
    height: 320px;
 }
@@ -46,7 +66,8 @@ img { /* was #cat1 */
    padding: 50px;
 }
 
-#catContainer div { /* was .circleCount */
+/* clicks */
+#catContainer div {
    right: 0;
    width: 50px;
    background-color: rgba(0, 255, 252, 0.6);

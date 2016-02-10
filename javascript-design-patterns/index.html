@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Cat Clicker v7.0.0</title>
+   <title>Cat Clicker v8.0.0</title>
    <link rel="stylesheet" href="css/style.css"></style>
 </head>
 <body>
-   <h1>Cat Clicker v7.0.0</h1>
+   <h1>Cat Clicker v8.0.0</h1>
 
    <div id="catContainer">
       <figure>
+         <h2 data-bind="text: getLevel"></h2>
          <div data-bind="text: clicks"></div>
          <img data-bind="click: incrementCounter, attr: {src: image}" src="" alt="cute cat">
          <figcaption data-bind="text: name"></figcaption>
