@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Cat Clicker v8.0.0</title>
+   <title>Cat Clicker v9.0.0</title>
    <link rel="stylesheet" href="css/style.css"></style>
 </head>
 <body>
-   <h1>Cat Clicker v8.0.0</h1>
+   <h1>Cat Clicker v9.0.0</h1>
 
    <div id="catContainer">
       <figure>
@@ -15,6 +15,12 @@
          <img data-bind="click: incrementCounter, attr: {src: image}" src="" alt="cute cat">
          <figcaption data-bind="text: name"></figcaption>
       </figure>
+
+      <!-- http://knockoutjs.com/documentation/foreach-binding.html -->
+      <ul data-bind="foreach: nicknames">
+         <!-- http://knockoutjs.com/documentation/binding-context.html -->
+         <li data-bind="text: $data"></li>
+      </ul>
    </div>
 
    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

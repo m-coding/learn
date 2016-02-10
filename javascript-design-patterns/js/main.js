@@ -4,11 +4,13 @@ var viewModel = function() {
     this.clicks = ko.observable(0);
     this.level = ko.observable('Newborn');
 
+    /* http://knockoutjs.com/documentation/observableArrays.html */
+    this.nicknames = ko.observableArray(['Pickles', 'Miss Kitty', 'Gizmo', 'Simba']);
+
     this.incrementCounter = function() {
         this.clicks(this.clicks() + 1);
     };
 
-    /* http://knockoutjs.com/documentation/computedObservables.html */
     this.getLevel = ko.computed(function() {
         if(this.clicks() >= 10) this.level('Infant');
         if(this.clicks() >= 50) this.level('Teen');

@@ -42,6 +42,9 @@ Later you are asked to use [KnockoutJS](http://knockoutjs.com/), which uses the 
 ### v8 Cat Clicker Knockout
 * :small_red_triangle: Add Levels to Cat Clicker: Newborn, Infant, Teen using **KnockoutJS** [computed observables](http://knockoutjs.com/documentation/computedObservables.html).
 
+### v9 Cat Clicker Knockout
+* :small_red_triangle: Implement an array of nicknames for each cat using **KnockoutJS** [control flow](http://knockoutjs.com/documentation/foreach-binding.html) to display them all.
+
 # What I learned
 
 TBD
