@@ -4,7 +4,7 @@ These are exercises from the Udacity online course: _JavaScript Design Patterns_
 
 The app is called "Cat Clicker" and as required specs change, code needs to be refactored to incorporate the changes asked for.
 
-Eventually the final app will be organized using the **MVC** design pattern.
+Eventually the final app will be organized using the **MVVM** design pattern.
 
 Later you are asked to use [KnockoutJS](http://knockoutjs.com/), which uses the **Model View ViewModel** pattern.
 
@@ -56,4 +56,4 @@ Later you are asked to use [KnockoutJS](http://knockoutjs.com/), which uses the 
 
 # What I learned
 
-TBD
+About common design patterns MVC, MVP, MV*, and MVVM using __KnockoutJS__.
