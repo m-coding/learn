@@ -24,8 +24,31 @@
     <p>Written by <a href="https://github.com/addyosmani">Addy Osmani</a></p>
     <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
   </div>
-
-  <script type="text/template" id="stats-template"></script>
+  <script type="text/x-handlebars-template" id="item-template">
+    <div class="view">
+      <input class="toggle" type="checkbox" {{#if completed}} 'checked' {{/if}}>
+      <label>{{title}}</label>
+      <button class="destroy"></button>
+    </div>
+    <input class="edit" value="{{title}}">
+  </script>
+  <script type="text/x-handlebars-template" id="stats-template">
+    <span id="todo-count"><strong>{{remaining}}</strong>{{#if moreThanOne}} items {{else}} item {{/if}} left </span>
+    <ul id="filters">
+      <li>
+        <a class="selected" href="#/">All</a>
+      </li>
+      <li>
+        <a href="#/active">Active</a>
+      </li>
+      <li>
+        <a href="#/completed">Completed</a>
+      </li>
+    </ul>
+    {{#if completed }}
+    <button id="clear-completed">Clear completed ({{completed}})</button>
+    {{/if}}
+  </script>
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="js/lib/handlebars.min-latest.js"></script>
   <script src="js/lib/underscore-min.js"></script>
