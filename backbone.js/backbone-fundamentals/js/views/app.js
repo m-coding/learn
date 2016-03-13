@@ -46,7 +46,7 @@ app.AppView = Backbone.View.extend({
     render: function() {
         var completed = app.Todos.completed().length;
         var remaining = app.Todos.remaining().length;
-        var moreThanOne = remaing > 1; /* new */
+        var moreThanOne = remaining > 1; /* new */
 
     if ( app.Todos.length ) {
         this.$main.show();
