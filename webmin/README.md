@@ -18,6 +18,7 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * [Finally](http://luizlopes.com/virtualmin/) – A Virtualmin Theme
 * [Authentic](https://github.com/qooob/authentic-theme) – Webmin/Usermin/Virtualmin/Cloudmin theme based on Bootstrap and Font Awesome
 * [BWTheme](https://github.com/riccardonobile/Bootstrap3-Webmin-Theme) – A simple and beautiful theme for Webmin and Usermin made using Bootstrap and Font Awesome
+* [All Third-Party Themes](http://www.webmin.com/cgi-bin/search_third.cgi?themes=1) – As listed on the official site
 
 ### Tutorials
 * **2013-11-18** [Webmin / Virtualmin - Tutorial. It's easy and free](http://www.webhostingtalk.com/showthread.php?t=1323148) @ webhostingtalk.com
