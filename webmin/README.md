@@ -16,7 +16,7 @@ http://doxfer.webmin.com/Webmin/Main_Page
 
 ### Themes
 * [Finally](http://luizlopes.com/virtualmin/) – A Virtualmin Theme
-* [Authentic](https://github.com/qooob/authentic-theme) – Webmin/Usermin/Virtualmin/Cloudmin theme based on Bootstrap and Font Awesome
+* [Authentic](https://github.com/qooob/authentic-theme)<sup>[1](#f1)</sup> – Webmin/Usermin/Virtualmin/Cloudmin theme based on Bootstrap and Font Awesome
 * [BWTheme](https://github.com/riccardonobile/Bootstrap3-Webmin-Theme) – A simple and beautiful theme for Webmin and Usermin made using Bootstrap and Font Awesome
 * [All Third-Party Themes](http://www.webmin.com/cgi-bin/search_third.cgi?themes=1) – As listed on the official site
 
@@ -28,3 +28,4 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * **2013-05-07** [How To Install Webmin on an Ubuntu Cloud Server](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-an-ubuntu-cloud-server) @ digitalocean.com
 * **2015-01-19** [How To Install Webmin with SSL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-with-ssl-on-ubuntu-14-04) @ digitalocean.com
 
+<b id="f1">1</b> This is now the default theme for Webmin. [↩](#f1)
