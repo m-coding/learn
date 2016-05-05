@@ -27,5 +27,6 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * **2013-08-12** [How To Install and Utilize VirtualMin on a VPS](https://www.digitalocean.com/community/tutorials/how-to-install-and-utilize-virtualmin-on-a-vps) @ digitalocean.com
 * **2013-05-07** [How To Install Webmin on an Ubuntu Cloud Server](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-an-ubuntu-cloud-server) @ digitalocean.com
 * **2015-01-19** [How To Install Webmin with SSL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-with-ssl-on-ubuntu-14-04) @ digitalocean.com
+* **2013-12** [Virtualmin security guide](https://www.lowendtalk.com/discussion/18133/virtualmin-security-guide-part-one-22-images) @ lowendtalk.com
 
 <b id="f1">1</b> This is now the default theme for Webmin. [↩](#f1)
