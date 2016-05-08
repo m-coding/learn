@@ -21,18 +21,20 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * [All Third-Party Themes](http://www.webmin.com/cgi-bin/search_third.cgi?themes=1) – As listed on the official site
 
 ### Tutorials
-* **2013-11-18** [Webmin / Virtualmin - Tutorial. It's easy and free](http://www.webhostingtalk.com/showthread.php?t=1323148) @ webhostingtalk.com
-* **2015-07** [VPS Websites using free Webmin-Virtualmin](https://www.fullcircuit.com/blog/vps-websites-using-free-webmin-virtualmin) @ fullcircuit.com
-* **2014-10** [Setting Up Your Website/Email on Digital Ocean](http://surendran.info/setting-your-websiteemail-digital-ocean) @ surendran.info
-* **2013-08-12** [How To Install and Utilize VirtualMin on a VPS](https://www.digitalocean.com/community/tutorials/how-to-install-and-utilize-virtualmin-on-a-vps) @ digitalocean.com
-* **2013-05-07** [How To Install Webmin on an Ubuntu Cloud Server](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-an-ubuntu-cloud-server) @ digitalocean.com
-* **2015-01-19** [How To Install Webmin with SSL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-with-ssl-on-ubuntu-14-04) @ digitalocean.com
-* **2013-12** [Virtualmin security guide](https://www.lowendtalk.com/discussion/18133/virtualmin-security-guide-part-one-22-images) @ lowendtalk.com
-* **2014-10-23** [Sub-server vs Addon Domains](http://ilovevirtualmin.com/sub-server-vs-addon-domains/) @ ilovevirtualmin.com
-* **2014-10-13** [Configuring a cloud-based secure multi-domain web and e-mail server](http://jkshay.com/configuring-cloud-based-secure-multi-domain-web-e-mail-server/3/) @ jkshay.com
-* **2015-08-05** [setting-up-mt-self-managed-vps.md](https://gist.github.com/cballenar/4c828fb0590e4e39052e) @cballenar gist
-* **2013-07-06** [Installing and securing LAMP, phpmyadmin, and webmin on new Ubuntu 12.04](http://www.guyzero.com/server-administration/installing-and-securing-lamp-phpmyadmin-and-webmin-on-new-ubuntu-12-04) @guyzero.com
-* **2016-03-24** [
+* __2013-11-18__ [Webmin / Virtualmin - Tutorial. It's easy and free](http://www.webhostingtalk.com/showthread.php?t=1323148) @ webhostingtalk.com
+* __2015-07__ [VPS Websites using free Webmin-Virtualmin](https://www.fullcircuit.com/blog/vps-websites-using-free-webmin-virtualmin) @ fullcircuit.com
+* __2014-10__ [Setting Up Your Website/Email on Digital Ocean](http://surendran.info/setting-your-websiteemail-digital-ocean) @ surendran.info
+* __2013-08-12__ [How To Install and Utilize VirtualMin on a VPS](https://www.digitalocean.com/community/tutorials/how-to-install-and-utilize-virtualmin-on-a-vps) @ digitalocean.com
+* __2013-05-07__ [How To Install Webmin on an Ubuntu Cloud Server](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-an-ubuntu-cloud-server) @ digitalocean.com
+* __2015-01-19__ [How To Install Webmin with SSL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-with-ssl-on-ubuntu-14-04) @ digitalocean.com
+* __2013-12__ [Virtualmin security guide](https://www.lowendtalk.com/discussion/18133/virtualmin-security-guide-part-one-22-images) @ lowendtalk.com
+* __2014-10-23__ [Sub-server vs Addon Domains](http://ilovevirtualmin.com/sub-server-vs-addon-domains/) @ ilovevirtualmin.com
+* __2014-10-13__ [Configuring a cloud-based secure multi-domain web and e-mail server](http://jkshay.com/configuring-cloud-based-secure-multi-domain-web-e-mail-server/3/) @ jkshay.com
+* __2015-08-05__ [setting-up-mt-self-managed-vps.md](https://gist.github.com/cballenar/4c828fb0590e4e39052e) @cballenar gist
+* __2013-07-06__ [Installing and securing LAMP, phpmyadmin, and webmin on new Ubuntu 12.04](http://www.guyzero.com/server-administration/installing-and-securing-lamp-phpmyadmin-and-webmin-on-new-ubuntu-12-04) @guyzero.com
+* __2016-03-24__ [
 How to Install WordPress on Vultr VPS and ServerPilot](https://woorkup.com/install-wordpress-vultr-vps-serverpilot/) @ woorkup.com
+* 2015-03-09 [Ubuntu 14.04 and Virtualmin](https://www.jakweb.ch/blog/a/9/ubuntu-1404-and-virtualmin-part-1) @jakweb.ch
+
 
 <b id="f1">1</b> This is now the default theme for Webmin. [↩](#f1)
