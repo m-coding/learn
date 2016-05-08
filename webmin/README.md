@@ -32,5 +32,7 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * **2014-10-13** [Configuring a cloud-based secure multi-domain web and e-mail server](http://jkshay.com/configuring-cloud-based-secure-multi-domain-web-e-mail-server/3/) @ jkshay.com
 * **2015-08-05** [setting-up-mt-self-managed-vps.md](https://gist.github.com/cballenar/4c828fb0590e4e39052e) @cballenar gist
 * **2013-07-06** [Installing and securing LAMP, phpmyadmin, and webmin on new Ubuntu 12.04](http://www.guyzero.com/server-administration/installing-and-securing-lamp-phpmyadmin-and-webmin-on-new-ubuntu-12-04) @guyzero.com
+* **2016-03-24** [
+How to Install WordPress on Vultr VPS and ServerPilot](https://woorkup.com/install-wordpress-vultr-vps-serverpilot/) @ woorkup.com
 
 <b id="f1">1</b> This is now the default theme for Webmin. [↩](#f1)
