@@ -35,6 +35,7 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * __2016-03-24__ [
 How to Install WordPress on Vultr VPS and ServerPilot](https://woorkup.com/install-wordpress-vultr-vps-serverpilot/) @ woorkup.com
 * __2015-03-09__ [Ubuntu 14.04 and Virtualmin](https://www.jakweb.ch/blog/a/9/ubuntu-1404-and-virtualmin-part-1) @jakweb.ch
+* __2012-04-16__ [Virtualmin Setup Guide](https://www.virtualmin.com/node/21899) @virtualmin.com
 
 
 <b id="f1">1</b> This is now the default theme for Webmin. [↩](#f1)
