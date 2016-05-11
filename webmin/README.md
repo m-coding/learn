@@ -21,6 +21,7 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * [All Third-Party Themes](http://www.webmin.com/cgi-bin/search_third.cgi?themes=1) – As listed on the official site
 
 ### Tutorials
+##### Webmin Setup
 * __2013-11-18__ [Webmin / Virtualmin - Tutorial. It's easy and free](http://www.webhostingtalk.com/showthread.php?t=1323148) @ webhostingtalk.com
 * __2015-07__ [VPS Websites using free Webmin-Virtualmin](https://www.fullcircuit.com/blog/vps-websites-using-free-webmin-virtualmin) @ fullcircuit.com
 * __2014-10__ [Setting Up Your Website/Email on Digital Ocean](http://surendran.info/setting-your-websiteemail-digital-ocean) @ surendran.info
@@ -29,13 +30,13 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * __2015-01-19__ [How To Install Webmin with SSL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-with-ssl-on-ubuntu-14-04) @ digitalocean.com
 * __2013-12__ [Virtualmin security guide](https://www.lowendtalk.com/discussion/18133/virtualmin-security-guide-part-one-22-images) @ lowendtalk.com
 * __2014-10-23__ [Sub-server vs Addon Domains](http://ilovevirtualmin.com/sub-server-vs-addon-domains/) @ ilovevirtualmin.com
-* __2014-10-13__ [Configuring a cloud-based secure multi-domain web and e-mail server](http://jkshay.com/configuring-cloud-based-secure-multi-domain-web-e-mail-server/3/) @ jkshay.com
-* __2015-08-05__ [setting-up-mt-self-managed-vps.md](https://gist.github.com/cballenar/4c828fb0590e4e39052e) @cballenar gist
-* __2013-07-06__ [Installing and securing LAMP, phpmyadmin, and webmin on new Ubuntu 12.04](http://www.guyzero.com/server-administration/installing-and-securing-lamp-phpmyadmin-and-webmin-on-new-ubuntu-12-04) @guyzero.com
-* __2016-03-24__ [
-How to Install WordPress on Vultr VPS and ServerPilot](https://woorkup.com/install-wordpress-vultr-vps-serverpilot/) @ woorkup.com
+* __2016-03-24__ [How to Install WordPress on Vultr VPS and ServerPilot](https://woorkup.com/install-wordpress-vultr-vps-serverpilot/) @ woorkup.com
 * __2015-03-09__ [Ubuntu 14.04 and Virtualmin](https://www.jakweb.ch/blog/a/9/ubuntu-1404-and-virtualmin-part-1) @jakweb.ch
 * __2012-04-16__ [Virtualmin Setup Guide](https://www.virtualmin.com/node/21899) @virtualmin.com
 
+##### Server Setup
+* __2014-10-13__ [Configuring a cloud-based secure multi-domain web and e-mail server](http://jkshay.com/configuring-cloud-based-secure-multi-domain-web-e-mail-server/3/) @ jkshay.com
+* __2015-08-05__ [setting-up-mt-self-managed-vps.md](https://gist.github.com/cballenar/4c828fb0590e4e39052e) @cballenar gist
+* __2013-07-06__ [Installing and securing LAMP, phpmyadmin, and webmin on new Ubuntu 12.04](http://www.guyzero.com/server-administration/installing-and-securing-lamp-phpmyadmin-and-webmin-on-new-ubuntu-12-04) @guyzero.com
 
 <b id="f1">1</b> This is now the default theme for Webmin. [↩](#f1)
