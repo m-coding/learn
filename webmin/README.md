@@ -33,6 +33,7 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * __2016-03-24__ [How to Install WordPress on Vultr VPS and ServerPilot](https://woorkup.com/install-wordpress-vultr-vps-serverpilot/) @ woorkup.com
 * __2015-03-09__ [Ubuntu 14.04 and Virtualmin](https://www.jakweb.ch/blog/a/9/ubuntu-1404-and-virtualmin-part-1) @jakweb.ch
 * __2012-04-16__ [Virtualmin Setup Guide](https://www.virtualmin.com/node/21899) @virtualmin.com
+* __2012-05-28__ [Using VirtualMin with External DNS](https://www.virtualmin.com/node/22338) @virtualmin.com
 
 ##### Server Setup
 * __2014-10-13__ [Configuring a cloud-based secure multi-domain web and e-mail server](http://jkshay.com/configuring-cloud-based-secure-multi-domain-web-e-mail-server/3/) @ jkshay.com
