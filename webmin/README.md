@@ -40,5 +40,6 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * __2014-10-13__ [Configuring a cloud-based secure multi-domain web and e-mail server](http://jkshay.com/configuring-cloud-based-secure-multi-domain-web-e-mail-server/3/) @ jkshay.com
 * __2015-08-05__ [setting-up-mt-self-managed-vps.md](https://gist.github.com/cballenar/4c828fb0590e4e39052e) @cballenar gist
 * __2013-07-06__ [Installing and securing LAMP, phpmyadmin, and webmin on new Ubuntu 12.04](http://www.guyzero.com/server-administration/installing-and-securing-lamp-phpmyadmin-and-webmin-on-new-ubuntu-12-04) @guyzero.com
+* __2015-06-19__ [Your First 10 Minutes on a Server](https://github.com/codelittinc/incubator-resources/blob/master/best_practices/servers.md)
 
 <b id="f1">1</b> This is now the default theme for Webmin. [↩](#f1)
