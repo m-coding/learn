@@ -35,6 +35,7 @@ http://doxfer.webmin.com/Webmin/Main_Page
 * __2012-04-16__ [Virtualmin Setup Guide](https://www.virtualmin.com/node/21899) @virtualmin.com
 * __2012-05-28__ [Using VirtualMin with External DNS](https://www.virtualmin.com/node/22338) @virtualmin.com
 * __2015-05-07__ [Setting Up A New VPS on Vultr With Webmin](http://steve-brown.id.au/2015/05/07/setting-up-a-new-vps-on-vultr-with-webmin/) @steve-brown.id.au
+* __2008__ [Using Webmin to Add Users, Create MySQL Databases, and Other Tasks](http://linuxconsultant.info/tutorials/webmin-tutorial/webmin.html) @linuxconsultant.info
 
 ##### Server Setup
 * __2014-10-13__ [Configuring a cloud-based secure multi-domain web and e-mail server](http://jkshay.com/configuring-cloud-based-secure-multi-domain-web-e-mail-server/3/) @ jkshay.com
