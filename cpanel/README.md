@@ -7,3 +7,4 @@
 * [Addon Domains – Pros and Cons](https://kb.netvirtue.com.au/knowledgebase/addon-domains-pros-and-cons/) @netvirtue.com.au
 * [Site Migration from HSphere to cPanel?](http://www.webhostingtalk.com/showthread.php?t=1021879&p=7319992#post7319992) @webhostingtalk.com
 * [How to Manually Migrate Accounts to cPanel from Unsupported Control Panels](https://documentation.cpanel.net/display/CKB/How+to+Manually+Migrate+Accounts+to+cPanel+from+Unsupported+Control+Panels)
+* [Restrict subdomain access to addon domains](https://my.bluehost.com/cgi/help/134) @bluehost.com
