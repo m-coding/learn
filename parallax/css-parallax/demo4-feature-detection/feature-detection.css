@@ -1,0 +1,123 @@
+  /* demo styles
+  --------------------------------------------- */
+
+  body {
+    font: 120% / 1.5 Arial;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, p {
+    margin-bottom: 1.5em;
+  }
+
+
+  /* slide layout
+  --------------------------------------------- */
+
+  .slide {
+    position: relative;
+    padding: 40% 5%;
+  }
+  .slide__content {
+    max-width: 45em;
+    margin: auto;
+  }
+
+  .slide__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  /* slide backgrounds */
+
+  #slide-1 .slide__bg {
+    background-image: repeating-linear-gradient(
+      rgb(102, 204, 102),
+      rgb(102, 204, 102) 30px,
+      rgb(92, 184, 92) 30px,
+      rgb(92, 184, 92) 60px
+    );
+  }
+
+
+  /* misc
+  --------------------------------------------- */
+
+  .demo__info {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 80%;
+    text-align:center;
+    z-index: 100;
+  }
+
+  .status, .demo__info {
+    padding: 0.5em;
+    background: rgba(255, 255, 255, .5);
+  }
+  .status::before {
+    content: 'CSS Parallax is: NOT SUPPORTED';
+    color: #c00;
+    display: block;
+  }
+  .status::after {
+    content: 'CSS Parallax is: DISABLED';
+    color: #c00;
+  }
+
+
+  /* parallax */
+  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+    .status::before {
+      content: 'CSS Parallax is: SUPPORTED';
+      color: #090;
+    }
+  }
+
+  /* Large screen layout
+  --------------------------------------------- */
+
+  @media screen and (min-width: 45em) {
+
+    /* parallax */
+    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+      html, body {
+        overflow: hidden;
+        height:100%;
+      }
+      body {
+        transform: translateZ(0px); /* Fix paint issues in Edge && Safari H/W acceleration */
+      }
+      .status::after {
+        content: 'CSS Parallax is: ENABLED';
+        color: #090;
+      }
+      .slides {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 300px;
+        perspective-origin: 100% 100%;
+      }
+      .slide, .slide__content {
+        transform-style: preserve-3d;
+        transform: translateZ(0); /* Safari H/W acceleration */
+      }
+      .slide__bg {
+        transform: translateZ(-150px) scale(1.5);
+        transform-origin: 100% 100%;
+      }
+    }
+  }
