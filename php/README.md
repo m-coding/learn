@@ -5,4 +5,5 @@
 * [Zend PHP Certification](https://www.zend.com/en/services/certification/php-certification) @ zend.com
 
 ### Other
-* [Code Challenge](https://www.hackerrank.com/) @ hackerrank.com
+* [Programming problems and competitions](https://www.hackerrank.com/) @ hackerrank.com
+* [Programming challenges and courses](https://coderbyte.com/editor/guest:First%20Factorial:PHP) @ coderbyte.com
