@@ -7,6 +7,7 @@ Online learning, virtual schools, etc.
 
 ### udemy.com
 * [Learn Advanced PHP Programming](https://www.udemy.com/learn-advanced-php-programming/) $15
+* [Projects in PHP and MySQL](https://www.udemy.com/the-complete-web-development-course-learn-by-building-apps/) $15
 
 ## teamtreehouse.com
 * [PHP Development](https://teamtreehouse.com/tracks/php-development) Free Trial
