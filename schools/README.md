@@ -15,3 +15,6 @@ Online learning, virtual schools, etc.
 
 ## codecourse.com
 * [What's new in PHP 7.1](https://www.codecourse.com/lessons/php-71)
+
+## pluralsight.com
+[Building a Site with AngularJS and PHP](https://www.pluralsight.com/courses/angularjs-php-building-site) Free Trial
