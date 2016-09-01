@@ -18,3 +18,4 @@ Online learning, virtual schools, etc.
 
 ## pluralsight.com
 [Building a Site with AngularJS and PHP](https://www.pluralsight.com/courses/angularjs-php-building-site) Free Trial
+[Building Dynamic Websites with PHP and MySQL](https://www.pluralsight.com/courses/build-dynamic-web-sites-mysql-php) Free Trial
