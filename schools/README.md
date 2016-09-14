@@ -22,3 +22,6 @@ Online learning, virtual schools, etc.
 
 # laracasts.com
 [PHP][https://laracasts.com/skills/php]
+
+# killervideostore.com
+[PHP Projects](http://killervideostore.com/video-courses/php-projects.php) $79.99
