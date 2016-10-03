@@ -25,3 +25,6 @@ Online learning, virtual schools, etc.
 
 # killervideostore.com
 [PHP Projects](http://killervideostore.com/video-courses/php-projects.php) $79.99
+
+# sitepoint.com
+[PHP & MySQL Web Development for Beginners](https://www.sitepoint.com/premium/courses/php-mysql-web-development-for-beginners-13)
