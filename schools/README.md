@@ -28,3 +28,6 @@ Online learning, virtual schools, etc.
 
 # sitepoint.com
 [PHP & MySQL Web Development for Beginners](https://www.sitepoint.com/premium/courses/php-mysql-web-development-for-beginners-13)
+
+# phpu.cc
+[PHP University](http://www.phpu.cc/) $25
