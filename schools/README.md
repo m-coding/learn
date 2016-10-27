@@ -31,3 +31,6 @@ Online learning, virtual schools, etc.
 
 # phpu.cc
 [PHP University](http://www.phpu.cc/) $25
+
+# phpexercises.com
+[PHP Exercises](http://phpexercises.com/)
