@@ -17,20 +17,20 @@ Online learning, virtual schools, etc.
 * [What's new in PHP 7.1](https://www.codecourse.com/lessons/php-71)
 
 ## pluralsight.com
-[Building a Site with AngularJS and PHP](https://www.pluralsight.com/courses/angularjs-php-building-site) Free Trial
-[Building Dynamic Websites with PHP and MySQL](https://www.pluralsight.com/courses/build-dynamic-web-sites-mysql-php) Free Trial
+* [Building a Site with AngularJS and PHP](https://www.pluralsight.com/courses/angularjs-php-building-site) Free Trial
+* [Building Dynamic Websites with PHP and MySQL](https://www.pluralsight.com/courses/build-dynamic-web-sites-mysql-php) Free Trial
 
-# laracasts.com
-[PHP][https://laracasts.com/skills/php]
+## laracasts.com
+[PHP](https://laracasts.com/skills/php)
 
-# killervideostore.com
+## killervideostore.com
 [PHP Projects](http://killervideostore.com/video-courses/php-projects.php) $79.99
 
-# sitepoint.com
+## sitepoint.com
 [PHP & MySQL Web Development for Beginners](https://www.sitepoint.com/premium/courses/php-mysql-web-development-for-beginners-13)
 
-# phpu.cc
+## phpu.cc
 [PHP University](http://www.phpu.cc/) $25
 
-# phpexercises.com
+## phpexercises.com
 [PHP Exercises](http://phpexercises.com/)
